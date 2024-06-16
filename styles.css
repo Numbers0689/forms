@@ -9,6 +9,11 @@ body {
 
 label {
     display: block;
+    text-transform: uppercase;
+    color: rgb(101, 101, 101);
+    font-size: 13px;
+    font-weight: 550;
+    margin-bottom: 4px;
 }
 
 form > div {
@@ -45,4 +50,41 @@ form > div {
     bottom: 10px;
     left: 25%;
     right: 25%;
+}
+
+section {
+    padding: 30px 40px;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    padding: 3px 6px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+form > div > div {
+    margin-right: 50px;
+}
+
+button {
+    padding: 8px 25px;
+    background-color: #326fe9;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 2px solid #326fe9;
+}
+
+input:invalid {
+    border-color: red;
 }
