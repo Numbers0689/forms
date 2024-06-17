@@ -59,8 +59,10 @@ section {
 input {
     border: 2px solid #E5E7EB;
     padding: 3px 6px;
+    outline: none;
     font-size: 16px;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 form > div {
@@ -82,9 +84,22 @@ button {
 }
 
 input:focus {
-    border: 2px solid #326fe9;
+    border-color: #326fe9;
+    box-shadow: 0 0 4px lightgray;
 }
 
-input:invalid {
+input:user-invalid {
     border-color: red;
 }
+
+input:user-invalid ~ span{
+    font-size: 13px;
+    color: red;
+    display: inline;
+}
+
+span {
+    display: none;
+}
+
+
